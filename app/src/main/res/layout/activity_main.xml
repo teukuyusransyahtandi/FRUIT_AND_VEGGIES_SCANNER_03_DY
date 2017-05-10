@@ -21,6 +21,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="61dp"
         android:backgroundTint="?android:attr/colorBackground"
+        android:onClick="btnTakePhotoClicked"
         app:srcCompat="@drawable/scan_logo" />
+
 
 </RelativeLayout>
