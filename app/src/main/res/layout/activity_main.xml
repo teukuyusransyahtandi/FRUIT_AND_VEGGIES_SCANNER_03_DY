@@ -24,5 +24,29 @@
         android:onClick="btnTakePhotoClicked"
         app:srcCompat="@drawable/scan_logo" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageviewMain"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageviewMain"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="btnCari"
+        app:srcCompat="@drawable/cari" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageviewMain"
+        android:layout_alignRight="@+id/imageviewMain"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="btnInfoBak"
+        app:srcCompat="@drawable/tombol" />
+
 
 </RelativeLayout>
