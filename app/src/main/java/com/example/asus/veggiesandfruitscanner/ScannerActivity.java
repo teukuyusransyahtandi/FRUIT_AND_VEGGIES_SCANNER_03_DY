@@ -114,6 +114,29 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
 
     @Override
     public void handleResult(Result rawResult) {
-        // event handler result yang akan ditampilkan oleh app
+        //final String result = rawResult.getText();
+        int result = 55;
+        final String hasil = result+" %" +"\n kesegaran : 30% \n kadar air : 30%";
+        Log.d("QRCodeScanner", rawResult.getText());
+        Log.d("QRCodeScanner","Higienis !");
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Hasil Scan Sayuran : ");
+        builder.setPositiveButton("Scan Lagi", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                mScannerView.resumeCameraPreview(ScannerActivity.this);
+            }
+        });
+        builder.setNeutralButton("Cek Detail ", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent detail = new Intent(ScannerActivity.this,Detail.class );
+                ScannerActivity.this.startActivity(detail);
+            }
+        });
+        builder.setMessage(hasil);
+        AlertDialog alert1 = builder.create();
+        alert1.show();
     }
 }
