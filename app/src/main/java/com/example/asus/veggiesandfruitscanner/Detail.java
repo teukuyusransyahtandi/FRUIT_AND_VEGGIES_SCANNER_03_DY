@@ -1,8 +1,6 @@
 package com.example.asus.veggiesandfruitscanner;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import com.example.asus.veggiesandfruitscanner.R;
 
 public class Detail extends AppCompatActivity {
