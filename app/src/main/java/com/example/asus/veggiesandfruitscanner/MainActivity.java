@@ -20,4 +20,16 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(view.getContext(),ScannerActivity.class);
         startActivity(intent);
     }
+
+    public void btnCari(View view) {
+        Intent pindah = new Intent();
+        pindah.setClass(view.getContext(),Cari.class);
+        startActivity(pindah);
+    }
+
+    public void btnInfoBak(View view) {
+        Intent pergi = new Intent();
+        pergi.setClass(view.getContext(),Info.class);
+        startActivity(pergi);
+    }
 }
