@@ -114,20 +114,34 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
 
     @Override
     public void handleResult(Result rawResult) {
+<<<<<<< HEAD
         //final String result = rawResult.getText();
         int result = 55;
         final String hasil = result+" %" +"\n kesegaran : 30% \n kadar air : 30%";
+=======
+        // event handler result yang akan ditampilkan oleh app
+        // final String result = rawResult.getText();
+        //int result = (int) (1 + Math.random() * 100);
+        int result = 55;
+        final String hasil = result+" %";
+>>>>>>> Cut_Thifal_Nazila
         Log.d("QRCodeScanner", rawResult.getText());
         Log.d("QRCodeScanner","Higienis !");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+<<<<<<< HEAD
         builder.setTitle("Hasil Scan Sayuran : ");
+=======
+        builder.setTitle("Hasil Scan Bakteri : ");
+
+>>>>>>> Cut_Thifal_Nazila
         builder.setPositiveButton("Scan Lagi", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 mScannerView.resumeCameraPreview(ScannerActivity.this);
             }
         });
+<<<<<<< HEAD
         builder.setNeutralButton("Cek Detail ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -138,5 +152,12 @@ public class ScannerActivity extends AppCompatActivity implements ZXingScannerVi
         builder.setMessage(hasil);
         AlertDialog alert1 = builder.create();
         alert1.show();
+=======
+
+        builder.setMessage(hasil);
+        AlertDialog alert1 = builder.create();
+        alert1.show();
+
+>>>>>>> Cut_Thifal_Nazila
     }
 }
