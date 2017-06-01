@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="btnDiatas"
+        app:srcCompat="@drawable/diatas45bak" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageButton4"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@android:color/background_light"
+        android:onClick="btnDibawah"
+        app:srcCompat="@drawable/dibawah45bak" />
+</RelativeLayout>
