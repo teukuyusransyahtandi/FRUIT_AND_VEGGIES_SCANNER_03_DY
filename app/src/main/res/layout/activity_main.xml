@@ -48,5 +48,16 @@
         android:onClick="btnInfoBak"
         app:srcCompat="@drawable/tombol" />
 
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/background_light"
+        app:srcCompat="@drawable/caripasar1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton"
+        android:onClick="caripas"/>
+
 
 </RelativeLayout>
