@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnCari(View view) {
         Intent pindah = new Intent();
-        pindah.setClass(view.getContext(),Cari.class);
+        pindah.setClass(view.getContext(),Pasar.class);
         startActivity(pindah);
     }
 
@@ -31,5 +31,11 @@ public class MainActivity extends AppCompatActivity {
         Intent pergi = new Intent();
         pergi.setClass(view.getContext(),Info.class);
         startActivity(pergi);
+    }
+
+    public void caripas(View view) {
+        Intent jak = new Intent();
+        jak.setClass(view.getContext(),Cari.class);
+        startActivity(jak);
     }
 }
