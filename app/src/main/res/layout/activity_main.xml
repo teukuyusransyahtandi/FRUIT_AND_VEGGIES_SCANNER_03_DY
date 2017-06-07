@@ -28,25 +28,35 @@
         android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imageviewMain"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/imageviewMain"
-        android:layout_marginTop="14dp"
         android:backgroundTint="@android:color/background_light"
         android:onClick="btnCari"
-        app:srcCompat="@drawable/cari" />
+        app:srcCompat="@drawable/cari"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/imageviewMain"
-        android:layout_alignRight="@+id/imageviewMain"
-        android:layout_below="@+id/imageButton2"
-        android:layout_marginTop="14dp"
         android:backgroundTint="@android:color/background_light"
         android:onClick="btnInfoBak"
-        app:srcCompat="@drawable/tombol" />
+        app:srcCompat="@drawable/tombol"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/background_light"
+        app:srcCompat="@drawable/caripasar1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton"
+        android:onClick="caripas"/>
 
 
 </RelativeLayout>

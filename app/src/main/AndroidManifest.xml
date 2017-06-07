@@ -28,7 +28,8 @@
         <activity android:name=".Info" />
         <activity android:name=".Info1" />
         <activity android:name=".Info2" />
-        <activity android:name=".Detail"></activity>
+        <activity android:name=".Detail" />
+        <activity android:name=".Pasar"></activity>
     </application>
 
 </manifest>
