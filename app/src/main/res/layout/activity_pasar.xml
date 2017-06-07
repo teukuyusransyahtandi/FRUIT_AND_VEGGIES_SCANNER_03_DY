@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:onClick="bangmamat"
+        app:srcCompat="@drawable/bangmamat1" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton10"
+        android:onClick="kangeman"
+        app:srcCompat="@drawable/kangeman" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton11"
+        android:onClick="kedaisayur"
+        app:srcCompat="@drawable/kedaisayur" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton12"
+        android:onClick="sayursegar"
+        app:srcCompat="@drawable/sayursegar" />
+</RelativeLayout>
